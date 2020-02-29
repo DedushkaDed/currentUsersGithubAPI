@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:layout_marginTop="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="60sp"
+    android:foreground="?android:selectableItemBackground" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_toEndOf="@id/cover"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/guthublink1"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GithubLink"
+            android:layout_toEndOf="@id/cover"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/title"
+            android:visibility="invisible"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
