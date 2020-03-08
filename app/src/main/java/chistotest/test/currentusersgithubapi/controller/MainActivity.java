@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<ItemResponse> call, Throwable t) {
-                    Log.d("MainAcitivty", t.getMessage());
+                    Log.d("MainAcitivtyFailure", t.getMessage());
                     Toast.makeText(MainActivity.this, "Error Fetching Data!",Toast.LENGTH_SHORT).show();
                     Disconnected.setVisibility(View.VISIBLE);
                     pd.hide();
