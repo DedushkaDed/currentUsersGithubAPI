@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">currentUsersGithubAPI</string>
+    <string name="app_name">Github users</string>
     <string name="internet">No internet connection, Please make sure your device is connected to the internet </string>
 </resources>
